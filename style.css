@@ -108,6 +108,7 @@ body {
 
   right: 25px;
   color: var(--text-gray);
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
