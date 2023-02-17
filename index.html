@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="input.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="body__title">Рассчитайте стоимость<br />автомобиля в лизинг</h1>
+    <div class="calculator__top">
+      <div class="calculator__item">
+        <p class="calculator__item__title">Стоимость автомобиля</p>
+        <div class="calculator__item__after price">₽</div>
+        <input class="calculator__item__value" id="price-value" type="text" />
+        <input class="calculator__item__range" id="price-range" type="range" />
+      </div>
+      <div class="calculator__item initPay">
+        <p class="calculator__item__title">Первоначальный взнос</p>
+        <input
+          class="calculator__item__after initPayPercent-value"
+          id="initPayPercent-value"
+          type="text"
+          readonly
+        />
+        <input class="calculator__item__value" id="initPay-value" type="text" />
+        <input
+          class="calculator__item__range"
+          id="initPay-range"
+          type="range"
+        />
+      </div>
+      <div class="calculator__item">
+        <p class="calculator__item__title">Срок лизинга</p>
+        <div class="calculator__item__after time">мес.</div>
+        <input class="calculator__item__value" id="time-value" type="text" />
+        <input class="calculator__item__range" id="time-range" type="range" />
+      </div>
+    </div>
+    <div class="calculator__bot">
+      <div class="calculator__item">
+        <p class="calculator__item__title">Сумма договора лизинга</p>
+        <span class="calculator__item__result" id="result-total"></span>
+      </div>
+      <div class="calculator__item">
+        <p class="calculator__item__title">Ежемесячный платеж от</p>
+        <span class="calculator__item__result" id="result-pay"></span>
+      </div>
+      <button class="btn" onclick="submit()">
+        <span class="btn__text">Оставить заявку</span>
+      </button>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>

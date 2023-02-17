@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #FFFFFF;
+  --bg-color-input: #F3F3F4;
+
+  --btn-color: #ff9514;
+  --btn-black: #111111;
+  --btn-gray: #575757;
+
+  --text-white: #ffffff;
+  --text-gray: #575757;
+  --text-gray-dark: #333333;
+}
